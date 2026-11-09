@@ -5,6 +5,10 @@
 [![Files](https://img.shields.io/badge/Language%20Files-74%20files-orange.svg)](#структура-пакету)
 [![Coverage](https://img.shields.io/badge/Translation-100%25-brightgreen.svg)](#про-переклад)
 
+<p align="center">
+  <img src="assets/banner.jpg" alt="ExpressionEngine 7 Ukrainian Language Pack Banner" width="100%">
+</p>
+
 Офіційний та повний український мовний пакет для системи керування контентом **ExpressionEngine 7.x** (протестовано на версіях 7.5.x).
 
 ---
