@@ -1,0 +1,48 @@
+name: "Validate Language Pack"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  lint:
+    name: "PHP Syntax & Integrity Check"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "Set up PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: php-cs-fixer
+
+      - name: "Check PHP syntax in all files"
+        run: |
+          find ukrainian/ -type f -name "*.php" -print0 | while IFS= read -r -d '' file; do
+            php -l "$file" || exit 1
+          done
+          echo "All PHP files have valid syntax!"
+
+      - name: "Validate language array structure"
+        run: |
+          php -r '
+          $files = glob("ukrainian/*_lang.php");
+          $errors = 0;
+          foreach ($files as $file) {
+              $lang = [];
+              require $file;
+              if (!isset($lang) || !is_array($lang)) {
+                  echo "Error in $file: \$lang array is not defined or invalid.\n";
+                  $errors++;
+              }
+          }
+          if ($errors > 0) {
+              exit(1);
+          }
+          echo "All " . count($files) . " language arrays loaded successfully!\n";
+          '
