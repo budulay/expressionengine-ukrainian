@@ -31,10 +31,24 @@ jobs:
       - name: "Validate language array structure"
         run: |
           php -r '
-          if (!defined("DOC_URL")) define("DOC_URL", "https://docs.expressionengine.com/v7/");
-          if (!defined("BASE")) define("BASE", "");
-          if (!defined("PATH_THIRD")) define("PATH_THIRD", "");
-          if (!defined("URL_THIRD")) define("URL_THIRD", "");
+          $constants = [
+              "DOC_URL" => "https://docs.expressionengine.com/v7/",
+              "SYSDIR" => "system",
+              "SYSPATH" => "/system/",
+              "PASSWORD_MAX_LENGTH" => 72,
+              "USERNAME_MAX_LENGTH" => 75,
+              "BASE" => "",
+              "PATH_THIRD" => "",
+              "URL_THIRD" => "",
+              "SLASH" => "/",
+              "AMP" => "&",
+              "LD" => "{",
+              "RD" => "}",
+              "PATH_PRO_ADDONS" => ""
+          ];
+          foreach ($constants as $k => $v) {
+              if (!defined($k)) define($k, $v);
+          }
           $files = glob("ukrainian/*_lang.php");
           $errors = 0;
           foreach ($files as $file) {
