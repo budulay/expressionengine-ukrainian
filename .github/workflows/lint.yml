@@ -31,6 +31,10 @@ jobs:
       - name: "Validate language array structure"
         run: |
           php -r '
+          if (!defined("DOC_URL")) define("DOC_URL", "https://docs.expressionengine.com/v7/");
+          if (!defined("BASE")) define("BASE", "");
+          if (!defined("PATH_THIRD")) define("PATH_THIRD", "");
+          if (!defined("URL_THIRD")) define("URL_THIRD", "");
           $files = glob("ukrainian/*_lang.php");
           $errors = 0;
           foreach ($files as $file) {
