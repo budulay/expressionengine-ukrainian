@@ -3,24 +3,27 @@
 [![ExpressionEngine](https://img.shields.io/badge/ExpressionEngine-7.x-blue.svg)](https://expressionengine.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Files](https://img.shields.io/badge/Language%20Files-74%20files-orange.svg)](#структура-пакету)
-[![Coverage](https://img.shields.io/badge/Translation-100%25-brightgreen.svg)](#про-переклад)
+[![Coverage](https://img.shields.io/badge/Translation-100%25-brightgreen.svg)](#про-проєкт)
 
 <p align="center">
   <img src="assets/banner.jpg" alt="ExpressionEngine 7 Ukrainian Language Pack Banner" width="100%">
 </p>
 
-Офіційний та повний український мовний пакет для системи керування контентом **ExpressionEngine 7.x** (протестовано на версіях 7.5.x).
+Офіційний та повний український мовний пакет для системи керування контентом **ExpressionEngine 7.x** (протестовано на версії 7.5.28).
 
 ---
 
-## 🇺🇦 Про переклад
+## 🇺🇦 Про проєкт
 
-Цей мовний пакет містить повний переклад інтерфейсу ExpressionEngine українською мовою:
-- **Панель керування (Control Panel):** усі меню, форми, списки та налаштування.
-- **Модулі та поля:** Канали, записи, файловий менеджер, учасники, коментарі, зв'язки, RTE, форми каналів тощо.
-- **Командний рядок (CLI):** повна локалізація команд утиліти `ee-cli`.
-- **Електронні листи:** системні сповіщення, шаблони листів відновлення пароля, реєстрації та активації.
-- **Захист від спаму:** модуль `spam` з базою українських стоп-слів (`stopwords.php`).
+Цей репозиторій є повним переосмисленням, спадкоємцем та сучасним оновленням оригінальної української локалізації ExpressionEngine (яка колись створювалася ще для версії EE 1.x як `EE-Language-Ukranian`), повністю адаптованим та актуалізованим для сучасного рушія **ExpressionEngine 7.x** (протестовано на версії 7.5.28).
+
+Пакет забезпечує **100% переклад** інтерфейсу платформи:
+- **Панель керування (Control Panel):** усі системні меню, форми, списки, підказки та налаштування.
+- **Модулі та поля ядра:** Канали, записи, файловий менеджер, учасники та ролі, коментарі, зв'язки, форми каналів тощо.
+- **Розширені модулі (Pro & Add-ons):** підтримка популярних рішень, зокрема ExpressionEngine Pro, Pro Search, Pro Variables, Structure та Rich Text Editor (RTE).
+- **Командний рядок (CLI):** повна локалізація команд системної консолі `ee-cli`.
+- **Електронні листи:** системні сповіщення, шаблони листів реєстрації, скидання паролів та активації акаунтів.
+- **Захист від спаму:** модуль `spam` з оновленою базою українських стоп-слів (`stopwords.php`).
 
 ---
 
@@ -123,6 +126,6 @@ expressionengine-ukrainian/
 
 ## 🇬🇧 English Summary
 
-This repository contains the full Ukrainian language pack for **ExpressionEngine 7.x** (compatible with 7.5.x).
+This repository provides the complete Ukrainian language pack for **ExpressionEngine 7.x** (tested on 7.5.28). It is the modern rewrite and successor to the original `EE-Language-Ukranian` pack from the EE 1.x era.
 To install, simply place the `ukrainian/` directory into `system/user/language/` in your ExpressionEngine installation, then go to **Settings → General Settings** and set **Default Language** to **Ukrainian**.
 Distributed under the **MIT License**.
