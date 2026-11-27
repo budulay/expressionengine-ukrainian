@@ -9,13 +9,13 @@
   <img src="assets/banner.jpg" alt="ExpressionEngine 7 Ukrainian Language Pack Banner" width="100%">
 </p>
 
-Офіційний та повний український мовний пакет для системи керування контентом **ExpressionEngine 7.x** (протестовано на версії 7.5.28).
+Офіційний та повний український мовний пакет для системи керування контентом **ExpressionEngine 7.x** (протестовано на версії 7.6.0).
 
 ---
 
 ## 🇺🇦 Про проєкт
 
-Цей репозиторій є повним переосмисленням, спадкоємцем та сучасним оновленням оригінальної української локалізації ExpressionEngine (яка колись створювалася ще для версії EE 1.x як `EE-Language-Ukranian`), повністю адаптованим та актуалізованим для сучасного рушія **ExpressionEngine 7.x** (протестовано на версії 7.5.28).
+Цей репозиторій є повним переосмисленням, спадкоємцем та сучасним оновленням оригінальної української локалізації ExpressionEngine (яка колись створювалася ще для версії EE 1.x як `EE-Language-Ukranian`), повністю адаптованим та актуалізованим для сучасного рушія **ExpressionEngine 7.x** (протестовано на версії 7.6.0).
 
 Пакет забезпечує **100% переклад** інтерфейсу платформи:
 - **Панель керування (Control Panel):** усі системні меню, форми, списки, підказки та налаштування.
@@ -126,6 +126,6 @@ expressionengine-ukrainian/
 
 ## 🇬🇧 English Summary
 
-This repository provides the complete Ukrainian language pack for **ExpressionEngine 7.x** (tested on 7.5.28). It is the modern rewrite and successor to the original `EE-Language-Ukranian` pack from the EE 1.x era.
+This repository provides the complete Ukrainian language pack for **ExpressionEngine 7.x** (tested on 7.6.0). It is the modern rewrite and successor to the original `EE-Language-Ukranian` pack from the EE 1.x era.
 To install, simply place the `ukrainian/` directory into `system/user/language/` in your ExpressionEngine installation, then go to **Settings → General Settings** and set **Default Language** to **Ukrainian**.
 Distributed under the **MIT License**.

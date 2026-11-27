@@ -106,6 +106,7 @@ $lang = array(
     'pro_license_error_na' => 'Стан ліцензії ExpressionEngine Pro невідомий.',
     'pro_license_error_invalid' => 'Ліцензія ExpressionEngine Pro недійсна для цього сайту.',
     'pro_license_error_expired' => 'Ліцензія ExpressionEngine Pro закінчилася.',
+    'pro_license_error_unverified' => 'Перевірки ліцензії ExpressionEngine Pro не виконувалися успішно понад 14 днів. Переконайтеся, що цей сайт і ваш браузер мають доступ до updates.expressionengine.com.',
 
     'pro_license_check_instructions' => 'Оскільки цей сайт має кілька учасників, він також вимагатиме придбаної ліцензії. %s<br><br>Будь ласка, перевірте ваш <a href="%s">Ключ ліцензії сайту</a> та відвідайте розділ <a href="https://expressionengine.com/store/licenses" target="_blank">Ліцензії</a> на ExpressionEngine.com',
 
